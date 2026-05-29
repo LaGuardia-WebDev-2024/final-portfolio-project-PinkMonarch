@@ -57,7 +57,7 @@ Select ONE Additional Feature to Add
     
     
       body {
-        background-color:blueviolet
+        background-color:blueviolet;
         text-align:center;
       }
     
@@ -82,7 +82,7 @@ Select ONE Additional Feature to Add
         left:50%;
 
         width:120px;
-        heigth:120px;
+        height:120px;
 
         transform:translate(-50%, -50%);
       }
@@ -91,12 +91,28 @@ Select ONE Additional Feature to Add
       .popup-text{
         position:absolute;
         top:-50px;
-        left:50%;
+        left:1%;
 
         transform:translateX(-50%) scale(0.5);
-      }
+
+          color:aquamarine;
+
+          padding:10px 15px;
+          border-radius:10px;
+
+          font-size:20px;
+      
+          opacity:0;
+
+          transition:0.1s;
+          white-space:nowrap;
+        }
+
     
-    
+        .hotspot:hover .popup-text{
+          opacity:1;
+          transform:translateX(-50%) scale(1.2);
+        }
     
     
     
@@ -110,6 +126,29 @@ Select ONE Additional Feature to Add
     </style>
   </head>
   <body>
+
+
+
+    <div class="image-container">
+
+      <img src="images/unnamed.jpg">
+
+      <div class="hotspot" style="top:40%; left:50%;">
+
+        <div class="popup-text">
+          HEY TEST TEST TES!
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+
     <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul>
       <li><a class="active" href="index.html">Home</a></li>
